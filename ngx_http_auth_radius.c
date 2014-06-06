@@ -597,7 +597,7 @@ ngx_http_auth_radius_request_t*
 ngx_http_auth_radius_create_request(ngx_http_auth_radius_proxy_t* proxy,
         ngx_http_request_t* r)
 {
-	ngx_log_t* log = NULL;
+	//ngx_log_t* log = NULL;
 	ngx_http_auth_radius_request_t* rr = NULL;
 	RADIUS_PACKET* rp = NULL;
 	ngx_addr_t* addr = NULL;
@@ -609,7 +609,7 @@ ngx_http_auth_radius_create_request(ngx_http_auth_radius_proxy_t* proxy,
     ngx_pool_t* pool = r->pool;
     ngx_http_auth_radius_server_t* server = NULL;
 
-    log = proxy->log;
+    //log = proxy->log;
 	rlcf = ngx_http_get_module_loc_conf(r,ngx_http_auth_radius_module);
 
 	rr = ngx_pcalloc(pool,sizeof(ngx_http_auth_radius_request_t));
